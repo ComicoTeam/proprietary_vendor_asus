@@ -120,19 +120,9 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I01WD/proprietary/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin:$(TARGET_COPY_OUT_SYSTEM)/lib/DataSet/ispDB/ASUS_UNDI_ZOOM.bin \
     vendor/asus/I01WD/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/asus/I01WD/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
-    vendor/asus/I01WD/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
-    vendor/asus/I01WD/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
-    vendor/asus/I01WD/proprietary/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
     vendor/asus/I01WD/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/asus/I01WD/proprietary/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libfm-hci.so \
     vendor/asus/I01WD/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_DIT_MSMv1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_MSMv1.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_DIT_Manager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_Manager.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ISP.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_arch.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_arch.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
-    vendor/asus/I01WD/proprietary/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
     vendor/asus/I01WD/proprietary/lib64/libxt_native.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxt_native.so \
     vendor/asus/I01WD/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
     vendor/asus/I01WD/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_distortion_correction.so \
