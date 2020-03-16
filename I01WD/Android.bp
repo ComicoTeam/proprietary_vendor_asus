@@ -94,7 +94,7 @@ android_app_import {
 	name: "MotorService",
 	owner: "asus",
 	apk: "proprietary/priv-app/MotorService/MotorService.apk",
-	presigned: true,
+	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
