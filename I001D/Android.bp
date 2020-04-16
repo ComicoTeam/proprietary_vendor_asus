@@ -91,6 +91,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WfdService",
+	owner: "asus",
+	apk: "proprietary/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "com.qualcomm.location",
 	owner: "asus",
 	apk: "proprietary/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
@@ -193,5 +204,11 @@ android_app_import {
 	},
 	privileged: true,
 	product_specific: true,
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "asus",
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
