@@ -48,6 +48,16 @@ android_app_import {
 }
 
 android_app_import {
+	name: "aptxalsOverlay",
+	owner: "asus",
+	apk: "proprietary/app/aptxalsOverlay/aptxalsOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "AsusCamera",
 	owner: "asus",
 	apk: "proprietary/priv-app/AsusCamera/AsusCamera.apk",

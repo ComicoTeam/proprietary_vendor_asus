@@ -271,6 +271,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     aptxals \
+    aptxalsOverlay \
     AsusCamera \
     AsusGallery \
     AsusGalleryBurst \
