@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2020 The LineageOS Project
+ * Copyright (C) 2020-2021 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -94,6 +94,17 @@ android_app_import {
 }
 
 android_app_import {
+	name: "MotorK",
+	owner: "asus",
+	apk: "proprietary/priv-app/MotorK/MotorK.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
+
+android_app_import {
 	name: "MotorService",
 	owner: "asus",
 	apk: "proprietary/priv-app/MotorService/MotorService.apk",
@@ -102,5 +113,28 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+}
+
+android_app_import {
+	name: "colorservice",
+	owner: "asus",
+	apk: "proprietary/product/app/colorservice/colorservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+dex_import {
+	name: "QPerformance",
+	owner: "asus",
+	jars: ["proprietary/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "asus",
+	jars: ["proprietary/framework/UxPerformance.jar"],
 }
 

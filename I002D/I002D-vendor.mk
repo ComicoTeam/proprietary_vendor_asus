@@ -1,4 +1,4 @@
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020-2021 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,11 +18,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/asus/I002D
 
 PRODUCT_COPY_FILES += \
+    vendor/asus/I002D/proprietary/etc/permissions/asus.hardware.motor.latch_lock.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.hardware.motor.latch_lock.xml \
     vendor/asus/I002D/proprietary/etc/permissions/asus.software.gamewidget.zenui.rog3.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.gamewidget.zenui.rog3.xml \
     vendor/asus/I002D/proprietary/etc/permissions/asus.software.project.ZS670KS.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.project.ZS670KS.xml \
     vendor/asus/I002D/proprietary/etc/permissions/asus.software.zenui.seven.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.seven.xml \
     vendor/asus/I002D/proprietary/etc/permissions/asus.software.zenui.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.software.zenui.xml \
-    vendor/asus/I002D/proprietary/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/qti_libpermissions.xml \
+    vendor/asus/I002D/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/asus/I002D/proprietary/etc/sysconfig/ims-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/ims-hiddenapi-package-whitelist.xml \
     vendor/asus/I002D/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
     vendor/asus/I002D/proprietary/etc/videoeditor/Dynamic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Dynamic.mfim \
@@ -83,6 +84,16 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/etc/videoeditor7/transition/EB2B0E57-C3BF-4361-802A-90620C5CCEDE.videotransition:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor7/transition/EB2B0E57-C3BF-4361-802A-90620C5CCEDE.videotransition \
     vendor/asus/I002D/proprietary/etc/videoeditor7/transition/ECE4B448-D61B-49CB-BD17-580582703061.videotransition:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor7/transition/ECE4B448-D61B-49CB-BD17-580582703061.videotransition \
     vendor/asus/I002D/proprietary/etc/videoeditor7/transition/FCC6384D-1459-4C44-B05F-496AFC472A83.videotransition:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor7/transition/FCC6384D-1459-4C44-B05F-496AFC472A83.videotransition \
+    vendor/asus/I002D/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
+    vendor/asus/I002D/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
+    vendor/asus/I002D/proprietary/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
+    vendor/asus/I002D/proprietary/lib64/libxditk_DIT_MSMv1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_MSMv1.so \
+    vendor/asus/I002D/proprietary/lib64/libxditk_DIT_Manager.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_DIT_Manager.so \
+    vendor/asus/I002D/proprietary/lib64/libxditk_ISP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ISP.so \
+    vendor/asus/I002D/proprietary/lib64/libxditk_arch.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_arch.so \
+    vendor/asus/I002D/proprietary/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
+    vendor/asus/I002D/proprietary/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
+    vendor/asus/I002D/proprietary/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so \
@@ -127,8 +138,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so \
     vendor/asus/I002D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
     vendor/asus/I002D/proprietary/priv-app/GameBroadcaster/lib/arm64/libJniModule.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/GameBroadcaster/lib/arm64/libJniModule.so \
+    vendor/asus/I002D/proprietary/priv-app/MotorK/lib/arm64/libAsusMotorDriverHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorK/lib/arm64/libAsusMotorDriverHAL.so \
+    vendor/asus/I002D/proprietary/priv-app/MotorK/lib/arm64/libmotork-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorK/lib/arm64/libmotork-jni.so \
     vendor/asus/I002D/proprietary/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so \
-    vendor/asus/I002D/proprietary/priv-app/MotorService/lib/arm64/libjni_motor.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libjni_motor.so
+    vendor/asus/I002D/proprietary/priv-app/MotorService/lib/arm64/libjni_motor.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libjni_motor.so \
+    vendor/asus/I002D/proprietary/product/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsdm-disp-apis.qti.so \
+    vendor/asus/I002D/proprietary/product/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
+    vendor/asus/I002D/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
+    vendor/asus/I002D/proprietary/product/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.0.so \
+    vendor/asus/I002D/proprietary/product/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.1.so \
+    vendor/asus/I002D/proprietary/product/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.2.so \
+    vendor/asus/I002D/proprietary/product/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.display.color@1.3.so \
+    vendor/asus/I002D/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 PRODUCT_PACKAGES += \
     FocusAppListener \
@@ -138,4 +159,8 @@ PRODUCT_PACKAGES += \
     AsusGallery \
     AsusGalleryBurst \
     GameBroadcaster \
-    MotorService
+    MotorK \
+    MotorService \
+    colorservice \
+    QPerformance \
+    UxPerformance
