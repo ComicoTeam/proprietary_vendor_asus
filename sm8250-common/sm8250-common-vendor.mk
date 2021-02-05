@@ -9,6 +9,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM)/bin/qvrservice \
     vendor/asus/sm8250-common/proprietary/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM)/bin/sigma_miracasthalservice \
     vendor/asus/sm8250-common/proprietary/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM)/bin/wfdservice \
+    vendor/asus/sm8250-common/proprietary/etc/cdma_call_conf.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cdma_call_conf.xml \
     vendor/asus/sm8250-common/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/asus/sm8250-common/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/asus/sm8250-common/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
@@ -28,6 +29,11 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/sm8250-common/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
     vendor/asus/sm8250-common/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
+    vendor/asus/sm8250-common/proprietary/lib/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libadsprpc_system.so \
+    vendor/asus/sm8250-common/proprietary/lib/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbluetooth_qti.so \
+    vendor/asus/sm8250-common/proprietary/lib/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libbluetooth_qti.so \
+    vendor/asus/sm8250-common/proprietary/lib/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcdsprpc_system.so \
+    vendor/asus/sm8250-common/proprietary/lib/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmdsprpc_system.so \
     vendor/asus/sm8250-common/proprietary/lib/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmiracastsystem.so \
     vendor/asus/sm8250-common/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
     vendor/asus/sm8250-common/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
@@ -39,6 +45,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvrcamera_client.qti.so \
     vendor/asus/sm8250-common/proprietary/lib/libqvrservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvrservice.so \
     vendor/asus/sm8250-common/proprietary/lib/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqvrservice_client.qti.so \
+    vendor/asus/sm8250-common/proprietary/lib/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsdsprpc_system.so \
     vendor/asus/sm8250-common/proprietary/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdaac.so \
     vendor/asus/sm8250-common/proprietary/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdavenhancements.so \
     vendor/asus/sm8250-common/proprietary/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdclient.so \
@@ -63,7 +70,12 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
     vendor/asus/sm8250-common/proprietary/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/asus/sm8250-common/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
+    vendor/asus/sm8250-common/proprietary/lib64/libadsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libadsprpc_system.so \
+    vendor/asus/sm8250-common/proprietary/lib64/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbluetooth_qti.so \
+    vendor/asus/sm8250-common/proprietary/lib64/libbluetooth_qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libbluetooth_qti.so \
+    vendor/asus/sm8250-common/proprietary/lib64/libcdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcdsprpc_system.so \
     vendor/asus/sm8250-common/proprietary/lib64/liblocationservice_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/liblocationservice_jni.so \
+    vendor/asus/sm8250-common/proprietary/lib64/libmdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmdsprpc_system.so \
     vendor/asus/sm8250-common/proprietary/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmiracastsystem.so \
     vendor/asus/sm8250-common/proprietary/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmosal.so \
     vendor/asus/sm8250-common/proprietary/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmparser_lite.so \
@@ -71,6 +83,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpencoder.so \
     vendor/asus/sm8250-common/proprietary/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqvrcamera_client.qti.so \
     vendor/asus/sm8250-common/proprietary/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqvrservice_client.qti.so \
+    vendor/asus/sm8250-common/proprietary/lib64/libsdsprpc_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsdsprpc_system.so \
     vendor/asus/sm8250-common/proprietary/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdclient.so \
     vendor/asus/sm8250-common/proprietary/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdcommonutils.so \
     vendor/asus/sm8250-common/proprietary/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libwfdconfigutils.so \
@@ -138,6 +151,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libantradio \
     aptxals \
+    AsusVisualMaster \
     WfdService \
     com.qualcomm.location \
     DeviceInfo \
@@ -174,6 +188,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/product/etc/permissions/embms-noship_product_privapp_permissions_qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms-noship_product_privapp_permissions_qti.xml \
     vendor/asus/sm8250-common/proprietary/product/etc/permissions/embms.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/embms.xml \
     vendor/asus/sm8250-common/proprietary/product/etc/permissions/lpa.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/lpa.xml \
+    vendor/asus/sm8250-common/proprietary/product/lib/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
@@ -189,14 +204,17 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/product/lib/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libdiag_system.so \
     vendor/asus/sm8250-common/proprietary/product/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimscamera_jni.so \
     vendor/asus/sm8250-common/proprietary/product/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libimsmedia_jni.so \
+    vendor/asus/sm8250-common/proprietary/product/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libsdm-disp-apis.qti.so \
     vendor/asus/sm8250-common/proprietary/product/lib/libseccam.so:$(TARGET_COPY_OUT_PRODUCT)/lib/libseccam.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.alarm@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.audiohalext@1.0.so \
+    vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.cvp@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.iop@2.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.perf@2.0.so \
+    vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.am@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.hardware.radio.ims@1.0.so \
@@ -229,6 +247,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.imsrtpservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.imsrtpservice@2.1.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.latency@2.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib/vendor.qti.voiceprint@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib/vendor.qti.voiceprint@1.0.so \
+    vendor/asus/sm8250-common/proprietary/product/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
@@ -244,6 +263,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/product/lib64/libdiag_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libdiag_system.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimscamera_jni.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libimsmedia_jni.so \
+    vendor/asus/sm8250-common/proprietary/product/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsdm-disp-apis.qti.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libseccam.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccam.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libseccamservice.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libseccamservice.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsecureui_svcsock_system.so \
@@ -251,12 +271,14 @@ PRODUCT_COPY_FILES += \
     vendor/asus/sm8250-common/proprietary/product/lib64/libsystemhelper_jni.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/libsystemhelper_jni.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
+    vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.btconfigstore@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.btconfigstore@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.embmssl@1.0-adapter-helper.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.embmssl@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.embmssl@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.iop@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.iop@2.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.perf@2.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.perf@2.0.so \
+    vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.qdutils_disp@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
     vendor/asus/sm8250-common/proprietary/product/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_PRODUCT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
