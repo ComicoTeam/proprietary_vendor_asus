@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter rog3 I002D,$(TARGET_DEVICE)),)
+ifneq ($(filter obiwan I002D,$(TARGET_DEVICE)),)
 
 endif
