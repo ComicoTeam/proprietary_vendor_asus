@@ -1128,30 +1128,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/asus/I002D/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/asus/I002D/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot@1.1.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health@2.1.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.lights-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.lights-qti.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb@1.2-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/c2_manifest_vendor.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/power.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml \
-    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml \
     vendor/asus/I002D/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/asus/I002D/proprietary/vendor/etc/wfdconfig_720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_720.xml \
     vendor/asus/I002D/proprietary/vendor/etc/wfdconfig_MI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_MI.xml \
@@ -2802,10 +2778,33 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 PRODUCT_PACKAGES += \
-    libplatformconfig \
     libthermalclient \
     CACertService \
     CneApp \
     IWlanService \
     TimeService \
-    com.qualcomm.qti.gpudrivers.kona.api30
+    com.qualcomm.qti.gpudrivers.kona.api30 \
+    android.hardware.atrace@1.0-service \
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.boot@1.1 \
+    android.hardware.cas@1.2-service \
+    android.hardware.gnss@2.1-service-qti \
+    android.hardware.health@2.1 \
+    android.hardware.lights-qti \
+    android.hardware.neuralnetworks@1.3-service-qti-hta \
+    android.hardware.neuralnetworks@1.3-service-qti \
+    android.hardware.sensors@2.0-multihal \
+    android.hardware.thermal@2.0-service.qti \
+    android.hardware.usb@1.2-service \
+    android.hardware.wifi.hostapd \
+    android.hardware.wifi@1.0-service \
+    c2_manifest_vendor \
+    manifest \
+    manifest_android.hardware.drm@1.3-service.clearkey \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    power \
+    vendor.goodix.hardware.biometrics.fingerprint \
+    vendor.qti.gnss@4.0-service \
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.servicetracker@1.2-service \
+    vendor.qti.hardware.vibrator.service
