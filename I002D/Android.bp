@@ -5,314 +5,586 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libfastcvopt",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libfastcvopt.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
 android_app_import {
-	name: "CACertService",
+	name: "aptxals",
 	owner: "asus",
-	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	apk: "proprietary/app/aptxals/aptxals.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
 }
 
 android_app_import {
-	name: "CneApp",
+	name: "MotorK",
 	owner: "asus",
-	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	apk: "proprietary/priv-app/MotorK/MotorK.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	privileged: true,
 }
 
 android_app_import {
-	name: "IWlanService",
+	name: "MotorService",
 	owner: "asus",
-	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	apk: "proprietary/priv-app/MotorService/MotorService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	privileged: true,
 }
 
 android_app_import {
-	name: "TimeService",
+	name: "HotwordEnrollmentOKGoogleHEXAGON",
 	owner: "asus",
-	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk",
 	presigned: true,
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	privileged: true,
+	product_specific: true,
 }
 
 android_app_import {
-	name: "com.qualcomm.qti.gpudrivers.kona.api30",
+	name: "HotwordEnrollmentXGoogleHEXAGON",
 	owner: "asus",
-	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk",
+	apk: "proprietary/product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	product_specific: true,
+}
+
+android_app_import {
+	name: "AntHalService-Soong",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/AntHalService-Soong/AntHalService-Soong.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
-	soc_specific: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.atrace@1.0-service",
+android_app_import {
+	name: "DeviceInfo",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/app/DeviceInfo/DeviceInfo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.biometrics.fingerprint@2.1-service",
+android_app_import {
+	name: "DeviceStatisticsService",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/app/DeviceStatisticsService/DeviceStatisticsService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.boot@1.1",
+android_app_import {
+	name: "QtiTelephonyService",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.cas@1.2-service",
+android_app_import {
+	name: "colorservice",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.1-service-qti",
+android_app_import {
+	name: "WfdService",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.health@2.1",
+android_app_import {
+	name: "com.qualcomm.location",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.lights-qti",
+android_app_import {
+	name: "dpmserviceapp",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.lights-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks@1.3-service-qti-hta",
+android_app_import {
+	name: "qcrilmsgtunnel",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.neuralnetworks@1.3-service-qti",
+dex_import {
+	name: "QPerformance",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/framework/QPerformance.jar"],
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.sensors@2.0-multihal",
+dex_import {
+	name: "UxPerformance",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/framework/UxPerformance.jar"],
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.thermal@2.0-service.qti",
+dex_import {
+	name: "WfdCommon",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/framework/WfdCommon.jar"],
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.usb@1.2-service",
+dex_import {
+	name: "tcmclient",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/framework/tcmclient.jar"],
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.wifi.hostapd",
+dex_import {
+	name: "com.qti.snapdragon.sdk.display",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
+	product_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.wifi@1.0-service",
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "c2_manifest_vendor",
+dex_import {
+	name: "com.qti.dpmframework",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "manifest",
+dex_import {
+	name: "com.qti.location.sdk",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.qti.location.sdk.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.clearkey",
+dex_import {
+	name: "com.quicinc.cne.api-V1.0-java",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.api-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "manifest_android.hardware.drm@1.3-service.widevine",
+dex_import {
+	name: "com.quicinc.cne.api-V1.1-java",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.api-V1.1-java.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "power",
+dex_import {
+	name: "com.quicinc.cne.constants-V1.0-java",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/power.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.goodix.hardware.biometrics.fingerprint",
+dex_import {
+	name: "com.quicinc.cne.constants-V2.0-java",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.qti.gnss@4.0-service",
+dex_import {
+	name: "com.quicinc.cne.constants-V2.1-java",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.display.composer-service",
+dex_import {
+	name: "dpmapi",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.servicetracker@1.2-service",
+dex_import {
+	name: "izat.xt.srv",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
+	system_ext_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "vendor.qti.hardware.vibrator.service",
+dex_import {
+	name: "qcrilhook",
 	owner: "asus",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
+	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.api-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.cne.internal.constants-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "PowerOffAlarm",
+	owner: "asus",
+	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+}
+
+android_app_import {
+	name: "DynamicDDSService",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.secureui",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.secureui/com.qualcomm.qti.services.secureui.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.services.systemhelper",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "datastatusnotification",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/datastatusnotification/datastatusnotification.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "uimgbaservice",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "ims",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.imscmservice-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.imscmservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.qualcomm.qti.uceservice-V2.2-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/com.qualcomm.qti.uceservice-V2.2-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "embmslibrary",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "qti-telephony-common",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/qti-telephony-common.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "uimgbalibrary",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/uimgbalibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "uimgbamanagerlibrary",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/uimgbamanagerlibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "uimservicelibrary",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/uimservicelibrary.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.factory-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.factory-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.data.slm-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.data.slm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.alarm-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.connection-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.connection-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.dynamicdds-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.dynamicdds-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.latency-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.latency-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.hardware.data.qmi-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.qmi-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callcapability-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callcapability-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.callinfo-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.callinfo-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.factory-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V1.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.ims.rcsconfig-V2.1-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.ims.rcsconfig-V2.1-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.latency-V2.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.latency-V2.0-java.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "vendor.qti.voiceprint-V1.0-java",
+	owner: "asus",
+	jars: ["proprietary/system_ext/framework/vendor.qti.voiceprint-V1.0-java.jar"],
+	system_ext_specific: true,
 }
 
