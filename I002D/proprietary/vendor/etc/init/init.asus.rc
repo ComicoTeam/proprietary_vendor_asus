@@ -166,7 +166,7 @@ service vendor.ins_WDKey /vendor/bin/sh /vendor/bin/ReInsWDKey
     class core
     user root
     group root
-    seclabel u:r:install_key_server:s0
+    seclabel u:r:savelogmtp:s0
     disabled
     oneshot
 
@@ -174,6 +174,7 @@ service vendor.widevine /vendor/bin/sh /vendor/bin/widevine.sh
     class late_start
     user root
     group root
+    seclabel u:r:savelogmtp:s0
     disabled
     oneshot
 #ASUS_BSP add widevine_daemon service---
@@ -313,9 +314,10 @@ on property:vendor.atd.start.key.install=1
 on property:vendor.debug.check.keybox=1
     start vendor.widevine
 
-on property:vendor.drm.keystatus=-1
+on property:vendor.drm.keystatus=-1 && property:vendor.asus.install-key=""
     chmod 0644 /ADF/NOWDKY
     chmod 0644 /ADF/WDKEY
+    setprop vendor.asus.install-key 1
     start vendor.ins_WDKey
 #ASUS_BSP: add for key validation ---
 

@@ -1128,6 +1128,30 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/etc/system_properties.xml:$(TARGET_COPY_OUT_VENDOR)/etc/system_properties.xml \
     vendor/asus/I002D/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/asus/I002D/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.atrace@1.0-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot@1.1.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health@2.1.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.lights-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.lights-qti.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.thermal@2.0-service.qti.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.usb@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.usb@1.2-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/c2_manifest_vendor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/c2_manifest_vendor.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/power.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.goodix.hardware.biometrics.fingerprint.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.servicetracker@1.2-service.xml \
+    vendor/asus/I002D/proprietary/vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml \
     vendor/asus/I002D/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
     vendor/asus/I002D/proprietary/vendor/etc/wfdconfig_720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_720.xml \
     vendor/asus/I002D/proprietary/vendor/etc/wfdconfig_MI.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig_MI.xml \
@@ -1141,6 +1165,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/asus/I002D/proprietary/vendor/etc/workspace_grid_setting.xml:$(TARGET_COPY_OUT_VENDOR)/etc/workspace_grid_setting.xml \
     vendor/asus/I002D/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/asus/I002D/proprietary/vendor/firmware/Data.msc:$(TARGET_COPY_OUT_VENDOR)/firmware/Data.msc \
     vendor/asus/I002D/proprietary/vendor/firmware/FACE_CDSP_USER_8250.cdsp.prodQ_FACE.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/FACE_CDSP_USER_8250.cdsp.prodQ_FACE.elf \
     vendor/asus/I002D/proprietary/vendor/firmware/ROOT_8250.cdsp.prodQ.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ROOT_8250.cdsp.prodQ.elf \
     vendor/asus/I002D/proprietary/vendor/firmware/SRM_IMG_8250.cdsp.prodQ.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/SRM_IMG_8250.cdsp.prodQ.elf \
@@ -1163,6 +1188,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/firmware/a650_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.b02 \
     vendor/asus/I002D/proprietary/vendor/firmware/a650_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.elf \
     vendor/asus/I002D/proprietary/vendor/firmware/a650_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a650_zap.mdt \
+    vendor/asus/I002D/proprietary/vendor/firmware/amss20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/amss20.bin \
     vendor/asus/I002D/proprietary/vendor/firmware/bdwlan.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/bdwlan.elf \
     vendor/asus/I002D/proprietary/vendor/firmware/cdsp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b00 \
     vendor/asus/I002D/proprietary/vendor/firmware/cdsp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/cdsp.b01 \
@@ -1222,6 +1248,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/firmware/ipa_uc.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.b02 \
     vendor/asus/I002D/proprietary/vendor/firmware/ipa_uc.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.elf \
     vendor/asus/I002D/proprietary/vendor/firmware/ipa_uc.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_uc.mdt \
+    vendor/asus/I002D/proprietary/vendor/firmware/m3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/m3.bin \
     vendor/asus/I002D/proprietary/vendor/firmware/mcu_cali:$(TARGET_COPY_OUT_VENDOR)/firmware/mcu_cali \
     vendor/asus/I002D/proprietary/vendor/firmware/mcu_cali_factory:$(TARGET_COPY_OUT_VENDOR)/firmware/mcu_cali_factory \
     vendor/asus/I002D/proprietary/vendor/firmware/mcu_firmware.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/mcu_firmware.txt \
@@ -1530,7 +1557,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
     vendor/asus/I002D/proprietary/vendor/lib/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVdec.so \
     vendor/asus/I002D/proprietary/vendor/lib/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
-    vendor/asus/I002D/proprietary/vendor/lib/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVenc.so \
     vendor/asus/I002D/proprietary/vendor/lib/libOmxVideoDSMode.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVideoDSMode.so \
     vendor/asus/I002D/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
     vendor/asus/I002D/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
@@ -1637,7 +1663,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/lib/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libexthwplugin.so \
     vendor/asus/I002D/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
     vendor/asus/I002D/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
-    vendor/asus/I002D/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
     vendor/asus/I002D/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
     vendor/asus/I002D/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
     vendor/asus/I002D/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
@@ -2266,7 +2291,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/lib64/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxQcelp13Dec.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxSwVdec.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxSwVencMpeg4.so \
-    vendor/asus/I002D/proprietary/vendor/lib64/libOmxVenc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVenc.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxVpp.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOmxWmaDec.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
@@ -2379,7 +2403,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/lib64/libembmsservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libembmsservice.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libexthwplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libexthwplugin.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
-    vendor/asus/I002D/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libgameoptfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgameoptfeature.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
     vendor/asus/I002D/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
@@ -2780,33 +2803,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/vendor/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc
 
 PRODUCT_PACKAGES += \
+    libfastcvopt \
     libthermalclient \
     CACertService \
     CneApp \
     IWlanService \
     TimeService \
-    com.qualcomm.qti.gpudrivers.kona.api30 \
-    android.hardware.atrace@1.0-service \
-    android.hardware.biometrics.fingerprint@2.1-service \
-    android.hardware.boot@1.1 \
-    android.hardware.cas@1.2-service \
-    android.hardware.gnss@2.1-service-qti \
-    android.hardware.health@2.1 \
-    android.hardware.lights-qti \
-    android.hardware.neuralnetworks@1.3-service-qti-hta \
-    android.hardware.neuralnetworks@1.3-service-qti \
-    android.hardware.sensors@2.0-multihal \
-    android.hardware.thermal@2.0-service.qti \
-    android.hardware.usb@1.2-service \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi@1.0-service \
-    c2_manifest_vendor \
-    manifest \
-    manifest_android.hardware.drm@1.3-service.clearkey \
-    manifest_android.hardware.drm@1.3-service.widevine \
-    power \
-    vendor.goodix.hardware.biometrics.fingerprint \
-    vendor.qti.gnss@4.0-service \
-    vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.servicetracker@1.2-service \
-    vendor.qti.hardware.vibrator.service
+    com.qualcomm.qti.gpudrivers.kona.api30

@@ -29,6 +29,9 @@
             className="com.google.android.googlequicksearchbox.SearchActivity"
             packageName="com.google.android.googlequicksearchbox" />
         <favorite
+            className="com.google.android.apps.chrome.Main"
+            packageName="com.android.chrome" />
+        <favorite
             className="com.google.android.gm.ConversationListActivityGmail"
             packageName="com.google.android.gm" />
         <favorite
@@ -66,29 +69,65 @@
             packageName="com.google.android.apps.subscriptions.red" />
     </folder>
 	<favorite
-        className="com.google.android.apps.googleassistant.AssistantActivity"
-        packageName="com.google.android.apps.googleassistant"
+		className="com.asus.gallery.app.EPhotoActivity"
+        packageName="com.asus.gallery"
         screen="1"
         x="1"
         y="5" />
     <favorite
-        className="ru.yandex.searchplugin.MainActivity"
-        packageName="ru.yandex.searchplugin"
+		className="com.minsvyaz.rusapp.presentation.RootActivity"
+		packageName="com.minsvyaz.applist"
         screen="1"
         x="2"
         y="5" />
     <favorite
-        className="com.yandex.browser.YandexBrowserActivity"
-        packageName="com.yandex.browser"
+	className="ru.yandex.searchplugin.MainActivity"
+        packageName="ru.yandex.searchplugin"
         screen="1"
         x="3"
         y="5" />
-    <favorite
-        className="com.asus.gallery.app.EPhotoActivity"
-        packageName="com.asus.gallery"
+    <folder
         screen="1"
         x="4"
-        y="5" />
+        y="5"
+        title="Русское ПО" >
+        <favorite
+            className="ru.yandex.yandexmaps.SplashScreen"
+            packageName="ru.yandex.yandexmaps" />
+        <favorite
+            className="ru.yandex.disk.MainActivity"
+            packageName="ru.yandex.disk" />
+        <favorite
+            className="ru.yandex.mail.ui.LoginActivity"
+            packageName="ru.yandex.mail" />
+		<favorite
+            className="ru.mail.mailapp.SplashScreenActivity"
+            packageName="ru.mail.mailapp" />
+		<favorite
+            className="ru.mail.search.electroscope.ui.activity.AssistantActivity"
+            packageName="ru.mail.search.electroscope" />
+		<favorite
+            className="ru.nspk.mirpay.olcDxABqhyieE"
+            packageName="ru.nspk.mirpay" />
+		<favorite
+            className="rt.gosuslugi.client.droid.views.SplashScreen"
+            packageName="ru.rostel" />
+        <favorite
+            className="ru.mail.instantmessanger.flat.main.MainActivity"
+            packageName="com.icq.mobile.client" />
+		<favorite
+            className="ru.mail.portal.ui.activity.NewTabPageActivity"
+            packageName="ru.mail.portal" />
+        <favorite
+            className="ru.ok.streamer.ui.main.StartActivity"
+            packageName="ru.ok.live" />
+        <favorite
+            className="com.ncloudtech.cloudoffice.android.myfm.launch.LaunchActivity"
+            packageName="com.ncloudtech.cloudoffice" />
+        <favorite
+            className="com.kms.free.PermissionsActivityLauncher"
+            packageName="com.kms.free" />
+    </folder>
 
     <!-- screen [1] -->
     <folder
@@ -118,15 +157,15 @@
             className="com.futuredial.asusdatatransfer.DefaultLauncherActivity"
             packageName="com.futuredial.asusdatatransfer" />
     </folder>
-    <favorite
-        className="com.google.apps.dots.android.app.activity.CurrentsStartActivity"
-        packageName="com.google.android.apps.magazines"
-        screen="2"
-        x="1"
+	<favorite
+            className="ru.ok.android.ui.activity.main.OdklActivity"
+            packageName="ru.ok.android"
+			screen="2"
+        x="2"
         y="5" />
     <favorite
-        className="com.instagram.android.activity.MainTabActivity"
-        packageName="com.instagram.android"
+        className="com.vkontakte.android.MainActivity"
+        packageName="com.vkontakte.android"
         screen="2"
         x="3"
         y="5" />
@@ -147,7 +186,7 @@
         y="0" />
     <favorite
         className="com.google.android.apps.messaging.ui.ConversationListActivity"
-        packageName="com.google.android.apps.messaging"
+	packageName="com.google.android.apps.messaging"
         container="-103"
         screen="1"
         x="1"
@@ -160,8 +199,8 @@
         x="2"
         y="0" />
     <favorite
-        className="com.google.android.apps.chrome.Main"
-        packageName="com.android.chrome"
+        className="com.yandex.browser.YandexBrowserActivity"
+        packageName="com.yandex.browser"
         container="-103"
         screen="3"
         x="3"
@@ -175,3 +214,4 @@
         y="0" />
 
 </favorites>
+

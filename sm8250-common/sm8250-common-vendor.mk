@@ -111,7 +111,6 @@ PRODUCT_PACKAGES += \
     PowerOffAlarm \
     HotwordEnrollmentOKGoogleHEXAGON \
     HotwordEnrollmentXGoogleHEXAGON \
-    com.qualcomm.location \
     DeviceInfo \
     DeviceStatisticsService \
     DynamicDDSService \
@@ -121,6 +120,7 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.services.systemhelper \
     datastatusnotification \
     xdivert \
+    com.qualcomm.location \
     dpmserviceapp \
     ims \
     qcrilmsgtunnel \

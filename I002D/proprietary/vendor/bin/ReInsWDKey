@@ -8,31 +8,6 @@ logi ()
 	/vendor/bin/log -t $LOG_TAG -p i "$@"
 }
 
-get_SL ()
-{
-	SL=`getenforce`
-	COUNT=1
-	while [ "$SL" != "Permissive" ] && [ "$COUNT" -le 60 ]
-	do
-		logi "retry $COUNT"
-		setprop vendor.sys.asus.setenforce 1
-		sleep 5
-		SL=`getenforce`
-		COUNT=$(($COUNT+1))
-		sleep 1
-	done
-
-	if [ "$SL" != "Permissive" ] ;then
-		logi "fail, just exit"
-		setprop vendor.sys.asus.setenforce 0
-		exit
-	fi
-}
-
-setprop vendor.sys.asus.setenforce 1
-sleep 8
-
-get_SL
 
 logi "start to install WD key"
 
@@ -40,14 +15,23 @@ if [ -f "/ADF/NOWDKY" ]; then
 	logi "No WDKEY for this device"
 fi
 
+echo 1 > /sys/fs/selinux/log
+sleep 1
+
 /vendor/bin/install_key_server zf7rewv
 
 if [ -f "/ADF/keybox.bin" ]; then
 	rm -f $FNAME
 fi
 
+startlog_flag=`getprop persist.vendor.asus.startlog`
+if test "$startlog_flag" -eq 0; then
+	echo 0 > /sys/fs/selinux/log
+else
+	echo 1 > /sys/fs/selinux/log
+fi
+
 logi "end of WD key install"
 
-sleep 2
-setprop vendor.sys.asus.setenforce 0
+
 
