@@ -7,6 +7,13 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/etc/permissions/asus.hardware.motor.latch_lock.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/asus.hardware.motor.latch_lock.xml \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Charming.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Charming.mfim \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Dynamic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Dynamic.mfim \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Energetic.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Energetic.mfim \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Graceful.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Graceful.mfim \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Happy.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Happy.mfim \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Lively.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Lively.mfim \
+    vendor/asus/I002D/proprietary/etc/videoeditor/Soothing.mfim:$(TARGET_COPY_OUT_SYSTEM)/etc/videoeditor/Soothing.mfim \
     vendor/asus/I002D/proprietary/lib64/DataSet/arch/DIT_List.cfg:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/arch/DIT_List.cfg \
     vendor/asus/I002D/proprietary/lib64/DataSet/ditSCidGen/msgchk.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ditSCidGen/msgchk.db \
     vendor/asus/I002D/proprietary/lib64/DataSet/ispDB/ParameterDB.db:$(TARGET_COPY_OUT_SYSTEM)/lib64/DataSet/ispDB/ParameterDB.db \
@@ -17,14 +24,50 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/lib64/libxditk_ditArchLIB.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditArchLIB.so \
     vendor/asus/I002D/proprietary/lib64/libxditk_ditBSP.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP.so \
     vendor/asus/I002D/proprietary/lib64/libxditk_ditBSP_JNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libxditk_ditBSP_JNI.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasusundistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasusundistort.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libbitmap.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libbitmap.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libmpbase.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libyuv_util.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libyuv_util.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libNvStreamingSdkCore.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libNvStreamingSdkCore.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libRSSupport.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libRSSupport.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libarcsoft_beautyshot.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libarcsoft_undistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libarcsoft_undistort.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libblur.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libblur.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libcvface_api.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libcvface_api.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libgif.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libgif.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libgvr.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libgvr.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libjni_cvface_api.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libjni_cvface_api.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libjni_face_effect.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libjni_face_effect.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libjni_filter_show.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libjni_filter_show.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libjni_wide_angle_undistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libjni_wide_angle_undistort.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libmpbase.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libopencv_java3.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libopencv_java3.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libpano_video_renderer.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libpano_video_renderer.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libpanorenderer.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libpanorenderer.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librs.blur.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librs.blur.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librs.convolve3x3.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librs.convolve3x3.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librs.grad.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librs.grad.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librs.grey.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librs.grey.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librs.saturation.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librs.saturation.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librs.vignette.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librs.vignette.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librsjni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librsjni.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/librsjni_androidx.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/librsjni_androidx.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflow_inference.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libtensorflowlite_jni.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGalleryBurst/lib/arm/libgifencoder.so \
     vendor/asus/I002D/proprietary/priv-app/MotorK/lib/arm64/libAsusMotorDriverHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorK/lib/arm64/libAsusMotorDriverHAL.so \
     vendor/asus/I002D/proprietary/priv-app/MotorK/lib/arm64/libmotork-jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorK/lib/arm64/libmotork-jni.so \
     vendor/asus/I002D/proprietary/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libAsusMotorDriverHAL.so \
     vendor/asus/I002D/proprietary/priv-app/MotorService/lib/arm64/libjni_motor.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/MotorService/lib/arm64/libjni_motor.so \
     vendor/asus/I002D/proprietary/product/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/asus/I002D/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
-    vendor/asus/I002D/proprietary/system/lib/libdrm.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libdrm.so \
-    vendor/asus/I002D/proprietary/system/lib64/libdrm.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libdrm.so \
     vendor/asus/I002D/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/asus/I002D/proprietary/system_ext/bin/qvrservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/qvrservice \
     vendor/asus/I002D/proprietary/system_ext/bin/sigma_miracasthalservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/sigma_miracasthalservice \
@@ -161,6 +204,9 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     aptxals \
+    AsusCamera \
+    AsusGallery \
+    AsusGalleryBurst \
     MotorK \
     MotorService \
     HotwordEnrollmentOKGoogleHEXAGON \
