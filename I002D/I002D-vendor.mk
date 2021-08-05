@@ -27,6 +27,10 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libUndistort.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libUndistort.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_object_tracking.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_burstcapture.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_interval_capture.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_panorama_interval_capture.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_rog3.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_rog3.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_zf7.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libarcsoft_portrait_distortion_correction_zf7.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_interval_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_interval_panorama.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_object_tracking.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_panorama.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libasus_camera_selfiepano.so \
@@ -34,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libbitmap.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libbitmap.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libmpbase.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libmpbase.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libtensorflowlite_jni.so \
+    vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libyuv_camera.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libyuv_camera.so \
     vendor/asus/I002D/proprietary/priv-app/AsusCamera/lib/arm64/libyuv_util.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusCamera/lib/arm64/libyuv_util.so \
     vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libNvStreamingSdkCore.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libNvStreamingSdkCore.so \
     vendor/asus/I002D/proprietary/priv-app/AsusGallery/lib/arm64/libRSSupport.so:$(TARGET_COPY_OUT_SYSTEM)/priv-app/AsusGallery/lib/arm64/libRSSupport.so \
