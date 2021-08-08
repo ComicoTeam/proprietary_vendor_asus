@@ -207,6 +207,8 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
 
 PRODUCT_PACKAGES += \
+    libfastcvopt \
+    libthermalclient \
     aptxals \
     AsusCamera \
     AsusGallery \
