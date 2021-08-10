@@ -120,6 +120,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/asus/I002D/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
     vendor/asus/I002D/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
+    vendor/asus/I002D/proprietary/system_ext/lib/libqdMetaData.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqdMetaData.so \
     vendor/asus/I002D/proprietary/system_ext/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cam_cdsp_driver_stub.so \
     vendor/asus/I002D/proprietary/system_ext/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cdsp_driver_stub.so \
     vendor/asus/I002D/proprietary/system_ext/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_eyetracking_plugin.so \
@@ -167,6 +168,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/I002D/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
     vendor/asus/I002D/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
     vendor/asus/I002D/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
+    vendor/asus/I002D/proprietary/system_ext/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqdMetaData.so \
     vendor/asus/I002D/proprietary/system_ext/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrcamera_client.qti.so \
     vendor/asus/I002D/proprietary/system_ext/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_client.qti.so \
     vendor/asus/I002D/proprietary/system_ext/lib64/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov7251_hvx_tuning.so \
