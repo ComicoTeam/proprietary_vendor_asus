@@ -5,46 +5,6 @@
 soong_namespace {
 }
 
-cc_prebuilt_library_shared {
-	name: "libfastcvopt",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libfastcvopt.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libthermalclient",
-	owner: "asus",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm: {
-			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
-		},
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
-		},
-	},
-	compile_multilib: "both",
-	check_elf_files: false,
-	prefer: true,
-	soc_specific: true,
-}
-
 android_app_import {
 	name: "aptxals",
 	owner: "asus",
@@ -134,6 +94,132 @@ android_app_import {
 	product_specific: true,
 }
 
+dex_import {
+	name: "QPerformance",
+	owner: "asus",
+	jars: ["proprietary/framework/QPerformance.jar"],
+}
+
+dex_import {
+	name: "UxPerformance",
+	owner: "asus",
+	jars: ["proprietary/framework/UxPerformance.jar"],
+}
+
+dex_import {
+	name: "WfdCommon",
+	owner: "asus",
+	jars: ["proprietary/framework/WfdCommon.jar"],
+}
+
+dex_import {
+	name: "tcmclient",
+	owner: "asus",
+	jars: ["proprietary/framework/tcmclient.jar"],
+}
+
+dex_import {
+	name: "com.qti.snapdragon.sdk.display",
+	owner: "asus",
+	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
+	product_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libfastcvopt",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libfastcvopt.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libfastcvopt.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libthermalclient",
+	owner: "asus",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libthermalclient.so"],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libthermalclient.so"],
+		},
+	},
+	compile_multilib: "both",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "CACertService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/CACertService/CACertService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "CneApp",
+	owner: "asus",
+	apk: "proprietary/vendor/app/CneApp/CneApp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "IWlanService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/IWlanService/IWlanService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "TimeService",
+	owner: "asus",
+	apk: "proprietary/vendor/app/TimeService/TimeService.apk",
+	presigned: true,
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.qti.gpudrivers.kona.api30",
+	owner: "asus",
+	apk: "proprietary/vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
 android_app_import {
 	name: "AntHalService-Soong",
 	owner: "asus",
@@ -168,6 +254,50 @@ android_app_import {
 }
 
 android_app_import {
+	name: "DynamicDDSService",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QCC-AUTHMGR",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/QCC-AUTHMGR/QCC-AUTHMGR.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QCC",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/QCC/QCC.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QdcmFF",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/QdcmFF/QdcmFF.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "QtiTelephonyService",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/QtiTelephonyService/QtiTelephonyService.apk",
@@ -179,208 +309,31 @@ android_app_import {
 }
 
 android_app_import {
+	name: "WAPPushManager",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/WAPPushManager/WAPPushManager.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WigigTetheringRRO",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/WigigTetheringRRO/WigigTetheringRRO.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "colorservice",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/colorservice/colorservice.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "WfdService",
-	owner: "asus",
-	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "com.qualcomm.location",
-	owner: "asus",
-	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "dpmserviceapp",
-	owner: "asus",
-	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "qcrilmsgtunnel",
-	owner: "asus",
-	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "QPerformance",
-	owner: "asus",
-	jars: ["proprietary/framework/QPerformance.jar"],
-}
-
-dex_import {
-	name: "UxPerformance",
-	owner: "asus",
-	jars: ["proprietary/framework/UxPerformance.jar"],
-}
-
-dex_import {
-	name: "WfdCommon",
-	owner: "asus",
-	jars: ["proprietary/framework/WfdCommon.jar"],
-}
-
-dex_import {
-	name: "tcmclient",
-	owner: "asus",
-	jars: ["proprietary/framework/tcmclient.jar"],
-}
-
-dex_import {
-	name: "com.qti.snapdragon.sdk.display",
-	owner: "asus",
-	jars: ["proprietary/product/framework/com.qti.snapdragon.sdk.display.jar"],
-	product_specific: true,
-}
-
-dex_import {
-	name: "com.android.hotwordenrollment.common.util",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.qti.dpmframework",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.qti.dpmframework.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.qti.location.sdk",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.qti.location.sdk.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.quicinc.cne.api-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.quicinc.cne.api-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.quicinc.cne.api-V1.1-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.quicinc.cne.api-V1.1-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.quicinc.cne.constants-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.quicinc.cne.constants-V2.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "com.quicinc.cne.constants-V2.1-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/com.quicinc.cne.constants-V2.1-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "dpmapi",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/dpmapi.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "izat.xt.srv",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/izat.xt.srv.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "qcrilhook",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/qcrilhook.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.data.cne.internal.api-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.api-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.data.cne.internal.constants-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.cne.internal.constants-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-dex_import {
-	name: "vendor.qti.hardware.data.iwlan-V1.0-java",
-	owner: "asus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.data.iwlan-V1.0-java.jar"],
-	system_ext_specific: true,
-}
-
-android_app_import {
-	name: "PowerOffAlarm",
-	owner: "asus",
-	apk: "proprietary/product/app/PowerOffAlarm/PowerOffAlarm.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	product_specific: true,
-}
-
-android_app_import {
-	name: "DynamicDDSService",
-	owner: "asus",
-	apk: "proprietary/system_ext/app/DynamicDDSService/DynamicDDSService.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -422,6 +375,28 @@ android_app_import {
 }
 
 android_app_import {
+	name: "uimgbaservice",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/uimgbaservice/uimgbaservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "workloadclassifier",
+	owner: "asus",
+	apk: "proprietary/system_ext/app/workloadclassifier/workloadclassifier.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "xdivert",
 	owner: "asus",
 	apk: "proprietary/system_ext/app/xdivert/xdivert.apk",
@@ -429,6 +404,102 @@ android_app_import {
 	dex_preopt: {
 		enabled: false,
 	},
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "CarrierConfig",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/CarrierConfig/CarrierConfig.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "EmergencyInfo",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/EmergencyInfo/EmergencyInfo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "QuickAccessWallet",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/QuickAccessWallet/QuickAccessWallet.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "SetupWizard",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/SetupWizard/SetupWizard.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WallpaperCropper",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "WfdService",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/WfdService/WfdService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "com.qualcomm.location",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "dpmserviceapp",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
@@ -444,10 +515,27 @@ android_app_import {
 	system_ext_specific: true,
 }
 
-dex_import {
-	name: "vendor.qti.hardware.alarm-V1.0-java",
+android_app_import {
+	name: "qcrilmsgtunnel",
 	owner: "asus",
-	jars: ["proprietary/system_ext/framework/vendor.qti.hardware.alarm-V1.0-java.jar"],
+	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
+	name: "seccamservice",
+	owner: "asus",
+	apk: "proprietary/system_ext/priv-app/seccamservice/seccamservice.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
 	system_ext_specific: true,
 }
 
